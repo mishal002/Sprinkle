@@ -1,11 +1,9 @@
 package com.example.sprinkle.Activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
-import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.sprinkle.R
-import com.example.sprinkle.Util.Adepter
 import com.example.sprinkle.Util.DBHelpar
 import com.example.sprinkle.Util.ModelData
 import com.example.sprinkle.databinding.ActivityGetDataBinding
@@ -25,24 +23,30 @@ class GetDataActivity : AppCompatActivity() {
         val db = DBHelpar(this)
 
         binding.buyCakeBtn.setOnClickListener {
-            db.insertData(binding.nameEdt.toString())
+            db.insertData(
+                binding.nameEdt.text.toString(),
+                binding.mobileEdt.text.toString(),
+                binding.pincodeEdt.text.toString(),
+                binding.kgEdt.text.toString(),
+                binding.other1Edt.text.toString()
+            )
             list = db.readData()
-            setUpRV(list)
+            onBackPressed()
             Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
-
         }
 
-        binding.readDataBtn.setOnClickListener {
-            list = db.readData()
-            setUpRV(list)
+
+        binding.backArrow.setOnClickListener {
+            onBackPressed()
         }
-    }
-
-    fun setUpRV(l1: ArrayList<ModelData>) {
-
-        val adepter = Adepter(this, l1)
-        val lm = LinearLayoutManager(this)
-        binding.rvView.layoutManager = lm
-        binding.rvView.adapter = adepter
+        binding.kg05.setOnClickListener {
+            Toast.makeText(this, "KG 0.5", Toast.LENGTH_SHORT).show()
+        }
+        binding.kg1.setOnClickListener {
+            Toast.makeText(this, "KG 1", Toast.LENGTH_SHORT).show()
+        }
+        binding.kg2.setOnClickListener {
+            Toast.makeText(this, "KG 2", Toast.LENGTH_SHORT).show()
+        }
     }
 }

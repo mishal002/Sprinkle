@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.sprinkle.R
+import com.example.sprinkle.all_fragment.home_fragment
 import com.example.sprinkle.databinding.ActivityShoopingHomeBinding
 
 class shooping_home : AppCompatActivity() {
@@ -12,6 +13,10 @@ class shooping_home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, R.layout.activity_shooping_home)
+
+        binding.backArrow.setOnClickListener {
+            onBackPressed()
+        }
 
     }
 
