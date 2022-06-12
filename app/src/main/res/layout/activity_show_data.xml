@@ -7,26 +7,29 @@
     android:layout_height="match_parent"
     tools:context=".Activity.ShowDataActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Customer Data"
-        android:textSize="22sp"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:layout_gravity="center"/>
+   <LinearLayout
+       android:layout_margin="10sp"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/read_data_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="50sp"
-        android:layout_margin="5sp"
-        android:backgroundTint="#4CAF50"
-        android:elevation="5sp"
-        android:text="Click"
-        android:layout_gravity="center"
-        android:textColor="@color/black"
-        android:textStyle="bold" />
+       <TextView
+           android:layout_weight="1"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:gravity="center"
+           android:text="Customer Data"
+           android:textSize="20sp"
+           android:textColor="@color/black"
+           android:textStyle="bold"
+           android:layout_gravity="center"/>
+
+       <ImageView
+           android:id="@+id/add_data_btn"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:src="@drawable/add_data"/>
+
+   </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_view"

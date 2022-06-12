@@ -1,8 +1,8 @@
 package com.example.sprinkle.Activity
 
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import com.example.sprinkle.R
 import com.example.sprinkle.Util.DBHelpar
 import com.example.sprinkle.Util.ModelData
@@ -28,7 +28,9 @@ class GetDataActivity : AppCompatActivity() {
                 binding.mobileEdt.text.toString(),
                 binding.pincodeEdt.text.toString(),
                 binding.kgEdt.text.toString(),
-                binding.other1Edt.text.toString()
+                binding.other1Edt.text.toString(),
+                binding.addressEdt.text.toString(),
+                binding.timeEdt.text.toString()
             )
             list = db.readData()
             onBackPressed()

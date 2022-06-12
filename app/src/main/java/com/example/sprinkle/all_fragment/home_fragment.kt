@@ -1,23 +1,17 @@
 package com.example.sprinkle.all_fragment
 
-import android.R.layout
 import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
-import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ArrayAdapter
-import android.widget.Spinner
-import androidx.core.graphics.toColor
 import androidx.core.view.GravityCompat
+import androidx.fragment.app.Fragment
 import com.denzcoskun.imageslider.constants.ScaleTypes
 import com.denzcoskun.imageslider.models.SlideModel
-import com.example.sprinkle.databinding.FragmentHomeFragmentBinding
 import com.example.sprinkle.Activity.shooping_home
-import com.example.sprinkle.R
+import com.example.sprinkle.databinding.FragmentHomeFragmentBinding
 import com.example.sprinkle.Activity.HomeChoclateCake as HomeChoclateCake1
-
 
 
 @Suppress("UNREACHABLE_CODE")
@@ -66,12 +60,12 @@ class home_fragment : Fragment() {
         )
         imageList.add(
             SlideModel(
-                "http://www.rcbakery.com.my/images/banner.jpg",
+                "http://www.pirajees.com/media/codazon/slideshow/resize/1900x730/pirajees-web-banner2.jpg",
             )
         )
         imageList.add(
             SlideModel(
-                "http://www.chocolatebiclate.com/img/slider1.jpg",
+                "https://www.midlandbakers.com/wp-content/uploads/2020/07/cake-banner.jpg",
             )
         )
         imageList.add(

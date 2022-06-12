@@ -3,12 +3,14 @@ package com.example.sprinkle.Util
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.sprinkle.Activity.ShowDataActivity
 import com.example.sprinkle.R
+import com.example.sprinkle.Activity.ShowDataActivity as ShowDataActivity1
 
-class Adepter(private val getDataActivity: ShowDataActivity, private val l1: ArrayList<ModelData>) :
+
+class Adepter(private val getDataActivity: ShowDataActivity1, private val l1: ArrayList<ModelData>) :
     RecyclerView.Adapter<Adepter.ViewData>() {
 
     class ViewData(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -20,6 +22,9 @@ class Adepter(private val getDataActivity: ShowDataActivity, private val l1: Arr
         val pincode_txt: TextView = itemView.findViewById<TextView>(R.id.pincode_txt)
         val kg_txt: TextView = itemView.findViewById<TextView>(R.id.kg_txt)
         val other_1_txt: TextView = itemView.findViewById<TextView>(R.id.other_1_txt)
+        val address_txt: TextView = itemView.findViewById<TextView>(R.id.address_txt)
+        val time_txt: TextView = itemView.findViewById<TextView>(R.id.time_txt)
+        val delete_btn: ImageView = itemView.findViewById<ImageView>(R.id.delete_btn)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewData {
@@ -37,6 +42,14 @@ class Adepter(private val getDataActivity: ShowDataActivity, private val l1: Arr
         holder.pincode_txt.text = l1[position].pincode
         holder.kg_txt.text = l1[position].kg
         holder.other_1_txt.text = l1[position].other1
+        holder.address_txt.text = l1[position].address
+        holder.time_txt.text = l1[position].time
+
+        holder.delete_btn.setOnClickListener {
+            DBHelpar(getDataActivity).deleteData(l1[position].id)
+            var l1 = DBHelpar(getDataActivity).readData()
+            getDataActivity.setUpRV(l1)
+        }
     }
 
     override fun getItemCount(): Int {
