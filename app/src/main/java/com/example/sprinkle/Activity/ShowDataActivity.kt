@@ -33,7 +33,9 @@ class ShowDataActivity : AppCompatActivity() {
             startActivity(intent)
             Toast.makeText(this, "Add Data", Toast.LENGTH_SHORT).show()
         }
-
+        binding.backArrow.setOnClickListener {
+            onBackPressed()
+        }
     }
 
     fun setUpRV(l1: ArrayList<ModelData>) {
