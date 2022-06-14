@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="name"/>
+
+        <EditText
+            android:id="@+id/mobile_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="mobile"/>
+
+
+        <EditText
+            android:id="@+id/kg_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="kg"/>
+
+        <EditText
+            android:id="@+id/other1_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="other"/>
+
+        <EditText
+            android:id="@+id/pincode_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="pincode"/>
+
+        <EditText
+            android:id="@+id/address_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="address"/>
+
+        <EditText
+            android:id="@+id/time_edt_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="time"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:id="@+id/submit_data_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Submit"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -74,12 +74,38 @@ class DBHelpar(
         return list
     }
 
-    fun deleteData(id : String )
-    {
+    //Delete Data
+    fun deleteData(id: String) {
         var db = writableDatabase
 
-        db.delete("Student","id=$id",null)
+        db.delete("Student", "id=$id", null)
 
+
+    }
+//    UpDate Data
+
+    fun updateData(
+        id: String,
+        name: String,
+        mobile: String,
+        pincode: String,
+        kg: String,
+        other1: String,
+        address: String,
+        time: String
+    ) {
+        var db = writableDatabase
+
+        var cv = contentValuesOf()
+        cv.put("name", name)
+        cv.put("mobile", mobile)
+        cv.put("pincode", pincode)
+        cv.put("kg", kg)
+        cv.put("other1", other1)
+        cv.put("address", address)
+        cv.put("time", time)
+
+        db.update("Student", cv, "id=$id", null)
 
     }
 }

@@ -35,16 +35,59 @@ class home_fragment : Fragment() {
 
         binding.homeChocolate1.setOnClickListener {
             val intent = Intent(context, HomeChoclateCake1::class.java)
-            startActivity(intent) }
+            startActivity(intent)
+        }
 
 
         binding.homeChocolate2.setOnClickListener {
             val intent = Intent(context, HomeChoclateCake1::class.java)
-            startActivity(intent) }
+            startActivity(intent)
+        }
+
+
+        binding.homeChocolate3.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+        binding.homeChocolate21.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+        binding.homeChocolate22.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+        binding.homeChocolate23.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+        binding.homeChocolate31.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+        binding.homeChocolate32.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+        binding.homeChocolate3Thrd.setOnClickListener {
+            val intent = Intent(context, HomeChoclateCake1::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
 
         binding.menuHome.setOnClickListener {
-            binding.drawerLayout.openDrawer(GravityCompat.START) }
+            binding.drawerLayout.openDrawer(GravityCompat.START)
+        }
         return binding.root
 //        Spinner
 
@@ -56,11 +99,6 @@ class home_fragment : Fragment() {
         imageList.add(
             SlideModel(
                 "https://foodypoint.in/wp-content/uploads/2018/01/cake-banner-1.jpg",
-            )
-        )
-        imageList.add(
-            SlideModel(
-                "http://www.pirajees.com/media/codazon/slideshow/resize/1900x730/pirajees-web-banner2.jpg",
             )
         )
         imageList.add(

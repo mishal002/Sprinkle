@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".Activity.GetDataActivity">
 
@@ -15,221 +16,49 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="10sp"
+                android:layout_margin="5sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5sp">
-
-                <ImageView
-                    android:id="@+id/back_arrow"
-                    android:layout_width="25sp"
-                    android:layout_height="25sp"
-                    android:layout_gravity="center"
-                    android:layout_marginLeft="10sp"
-                    android:src="@drawable/back_arrow" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="Enter the All Data"
-                    android:textColor="#E91E63"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200sp"
-                    android:src="@drawable/cake_logo" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10sp"
-                    android:text="Chocolate Cake"
-                    android:textColor="@color/black"
-                    android:textSize="22sp"
-                    android:textStyle="bold" />
+                android:layout_height="wrap_content">
 
                 <LinearLayout
+                    android:background="#B42196F3"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="10sp"
-                        android:text="5.0" />
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5sp">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="30sp"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5sp"
-                        android:scaleType="centerCrop"
-                        android:src="@drawable/star" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:id="@+id/back_arrow"
+                        android:layout_width="25sp"
+                        android:layout_height="25sp"
                         android:layout_gravity="center"
                         android:layout_marginLeft="10sp"
-                        android:text="5.0 Reviews" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
+                        android:src="@drawable/back_arrow" />
 
                     <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10sp"
-                        android:text="$540.5"
-                        android:textColor="@color/black"
-                        android:textSize="25sp"
-                        android:textStyle="bold" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5sp"
-                        android:text="41% OFF"
-                        android:textSize="18sp" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <CheckBox
-                        android:id="@+id/checkbox_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/mack_it_eggless_50"
-                        android:textColor="@color/black" />
-
-                    <CheckBox
-                        android:id="@+id/checkbox_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="mack it less suger ($50)"
-                        android:textColor="@color/black" />
-
-                    <CheckBox
-                        android:id="@+id/checkbox_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="mack it heart shape ($100)"
-                        android:textColor="@color/black" />
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10sp"
-                        android:text="Deliver To"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textStyle="normal" />
-
-                    <EditText
-                        android:id="@+id/pincode_edt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="10sp"
-                        android:hint="Search Pincode"
-                        android:inputType="number" />
-
+                        android:gravity="center"
+                        android:text="Enter the All Data"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
 
                 </LinearLayout>
+            </androidx.cardview.widget.CardView>
 
 
-            </LinearLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:src="@drawable/cake_logo" />
 
-            <LinearLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Name"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-                <EditText
-                    android:id="@+id/name_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:hint="Name :"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Contect No"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-                <EditText
-                    android:id="@+id/mobile_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:hint="Mobile :"
-                    android:inputType="number"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Choice Kg Cake"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
+                android:backgroundTint="#B42196F3"
+                app:cardCornerRadius="7sp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -237,195 +66,483 @@
                     android:orientation="vertical">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="10sp">
-
-
-                        <Button
-                            android:id="@+id/kg_0.5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="0.5 Kg" />
-
-                        <Button
-                            android:id="@+id/kg_1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="3sp"
-                            android:text="1 Kg" />
-
-                        <Button
-                            android:id="@+id/kg_2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="3sp"
-                            android:text="2 Kg" />
-                    </LinearLayout>
-
-                    <EditText
-                        android:id="@+id/kg_edt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="5sp"
-                        android:hint="Other Kg"
-                        android:inputType="number" />
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10sp"
+                            android:text="Chocolate Cake"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10sp"
+                                android:text="5.0" />
+
+                            <ImageView
+                                android:layout_width="100dp"
+                                android:layout_height="30sp"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/star" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10sp"
+                                android:text="5.0 Reviews" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:text="$540.5"
+                                android:textColor="@color/white"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="5sp"
+                                android:text="41% OFF"
+                                android:textSize="18sp" />
+                        </LinearLayout>
+
+                        <!--                <LinearLayout-->
+                        <!--                    android:layout_width="match_parent"-->
+                        <!--                    android:layout_height="wrap_content"-->
+                        <!--                    android:orientation="vertical">-->
+
+                        <!--                    <CheckBox-->
+                        <!--                        android:id="@+id/checkbox_1"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="@string/mack_it_eggless_50"-->
+                        <!--                        android:textColor="@color/black" />-->
+
+                        <!--                    <CheckBox-->
+                        <!--                        android:id="@+id/checkbox_2"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="mack it less suger ($50)"-->
+                        <!--                        android:textColor="@color/black" />-->
+
+                        <!--                    <CheckBox-->
+                        <!--                        android:id="@+id/checkbox_3"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:text="mack it heart shape ($100)"-->
+                        <!--                        android:textColor="@color/black" />-->
+
+                        <!--                </LinearLayout>-->
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:text="Deliver To"
+                                android:textColor="@color/black"
+                                android:textSize="20sp"
+                                android:textStyle="normal" />
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_margin="5sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="10sp">
+
+                                <EditText
+                                    android:layout_margin="10sp"
+                                    android:id="@+id/pincode_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:background="#FFFFFF"
+                                    android:hint="Search Pincode"
+                                    android:inputType="number" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Name"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <EditText
+                                android:layout_margin="10sp"
+                                android:id="@+id/name_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Search Pincode"
+                                android:inputType="number" />
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Contect No"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <EditText
+                                android:layout_margin="10sp"
+                                android:id="@+id/mobile_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Search Pincode"
+                                android:inputType="number" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Choice Kg Cake"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10sp">
+
+
+                                <Button
+                                    android:id="@+id/kg_0.5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="0.5 Kg" />
+
+                                <Button
+                                    android:id="@+id/kg_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:text="1 Kg" />
+
+                                <Button
+                                    android:id="@+id/kg_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="3sp"
+                                    android:text="2 Kg" />
+                            </LinearLayout>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_margin="5sp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:cardCornerRadius="10sp">
+
+                                <EditText
+                                    android:layout_margin="10sp"
+                                    android:id="@+id/kg_edt"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10sp"
+                                    android:background="#FFFFFF"
+                                    android:hint="Search Pincode"
+                                    android:inputType="number" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Other Detail"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <EditText
+                                android:layout_margin="10sp"
+                                android:id="@+id/other_1_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Other Detaile"
+                                android:inputType="number" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Address"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <EditText
+                                android:layout_margin="10sp"
+                                android:id="@+id/address_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Address"
+                                android:inputType="number" />
+
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Date :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <TextView
+                                android:layout_margin="10sp"
+                                android:id="@+id/date_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Date"
+                                android:textSize="16sp"
+                                android:inputType="number"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10sp"
+                            android:text="Time :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal"/>
+
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <EditText
+                                android:layout_margin="10sp"
+                                android:id="@+id/time_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Search Time"
+                                android:inputType="number" />
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="3sp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Other Message :"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="normal" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_margin="5sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="10sp">
+
+                            <EditText
+                                android:layout_margin="10sp"
+                                android:id="@+id/other_2_edt"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10sp"
+                                android:background="#FFFFFF"
+                                android:hint="Search Pincode"
+                                android:inputType="number" />
+
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/buy_cake_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp"
+                            android:layout_margin="5sp"
+                            android:backgroundTint="#FFFFFF"
+                            android:elevation="5sp"
+                            android:text="Buy Now"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
 
                 </LinearLayout>
 
 
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Other Detail"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-                <EditText
-                    android:id="@+id/other_1_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:hint="Other Detail :"
-                    android:inputType="text"
-                    android:textColor="@color/black" />
-
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Address"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-
-                <EditText
-                    android:id="@+id/address_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10sp"
-                    android:hint="Address :"
-                    android:inputType="text"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Date :"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-
-                <EditText
-                    android:id="@+id/date_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10sp"
-                    android:hint="Address :"
-                    android:inputType="date"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="3sp"
-                android:orientation="vertical">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10sp"
-                    android:text="Time :"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-
-                <EditText
-                    android:id="@+id/time_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10sp"
-                    android:hint="time :"
-                    android:inputType="time"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="10dp"
-                android:elevation="3sp">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Other Message :"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="normal" />
-
-                <EditText
-                    android:id="@+id/other_2_edt"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="Message on Cake :"
-                    android:inputType="time"
-                    android:textColor="@color/black" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="bottom"
-                android:orientation="vertical">
-
-                <Button
-                    android:id="@+id/buy_cake_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="50sp"
-                    android:layout_margin="5sp"
-                    android:backgroundTint="#4CAF50"
-                    android:elevation="5sp"
-                    android:text="Buy Now"
-                    android:textColor="@color/black"
-                    android:textStyle="bold" />
-
-            </LinearLayout>
-
+            </androidx.cardview.widget.CardView>
         </LinearLayout>
 
 
